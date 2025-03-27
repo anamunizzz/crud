@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(135deg, #fcefee, #e4f0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Grupo de botões */
+.grupo-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+.buttons {
+    flex: 1 1 45%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: #fff;
+}
+
+#salvar {
+    background-color: #58b368;
+}
+
+#buscar {
+    background-color: #4da6ff;
+}
+
+#alterar {
+    background-color: #f9a825;
+}
+
+#apagar {
+    background-color: #ef5350;
+}
+
+.buttons:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form input:focus {
+    border-color: #58b368;
+    outline: none;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .buttons {
+        flex: 1 1 100%;
+    }
+}
